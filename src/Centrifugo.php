@@ -32,10 +32,6 @@ class Centrifugo implements CentrifugoInterface
 
     /**
      * Create a new Centrifugo instance.
-     *
-     * @param array|null      $config
-     * @param HttpClient|null $httpClient
-     *
      * @throws BindingResolutionException
      */
     public function __construct(array $config = null, HttpClient $httpClient = null)
@@ -51,10 +47,6 @@ class Centrifugo implements CentrifugoInterface
 
     /**
      * Init centrifugo configuration.
-     *
-     * @param array $config
-     *
-     * @return array
      */
     protected function initConfiguration(array $config): array
     {
@@ -82,14 +74,8 @@ class Centrifugo implements CentrifugoInterface
 
     /**
      * Send message into channel.
-     *
-     * @param string $channel
-     * @param array  $data
-     *
      * @throws CentrifugoConnectionException
      * @throws CentrifugoException
-     *
-     * @return array
      */
     public function publish(string $channel, array $data): array
     {
@@ -101,14 +87,8 @@ class Centrifugo implements CentrifugoInterface
 
     /**
      * Send message to centrifugo server.
-     *
-     * @param string $method
-     * @param array  $params
-     *
      * @throws CentrifugoConnectionException
      * @throws CentrifugoException
-     *
-     * @return array
      */
     protected function send(string $method, array $params = []): array
     {
@@ -119,14 +99,8 @@ class Centrifugo implements CentrifugoInterface
 
     /**
      * Send json data to centrifugo server.
-     *
-     * @param string $method
-     * @param string $json
-     *
      * @throws CentrifugoConnectionException
      * @throws CentrifugoException
-     *
-     * @return array
      */
     protected function sendData(string $method, string $json): array
     {
