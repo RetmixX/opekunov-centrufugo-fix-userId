@@ -1,5 +1,5 @@
 {
-    "name": "opekunov/laravel-centrifugo-broadcaster",
+    "name": "retmix/centrifugo-broadcaster-fix",
     "type": "library",
     "description": "Centrifugo broadcaster for laravel 8-9.x and Centrifugo >= 2.8.1",
     "keywords": [
@@ -18,14 +18,13 @@
             "name": "Aleksandr Opekunov",
             "email": "iam@opekunov.com",
             "role": "Creator"
+        },
+        {
+            "name": "Retmix",
+            "role": "Fix"
         }
     ],
-    "homepage": "https://github.com/opekunov/laravel-centrifugo-broadcaster",
-    "support": {
-        "email": "iam@opekunov.com",
-        "issues": "https://github.com/opekunov/laravel-centrifugo-broadcaster/issues",
-        "source": "https://github.com/opekunov/laravel-centrifugo-broadcaster"
-    },
+
     "require": {
         "php": "^8.0|^8.1",
         "laravel/framework": "^8.75|^9.0",
